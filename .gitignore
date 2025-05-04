@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.zappa/
+*.zip
+*.log
+zappa_settings.json
