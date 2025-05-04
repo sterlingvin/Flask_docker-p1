@@ -18,8 +18,21 @@ This microservice supports basic task tracking with endpoints for creating and r
 ---
 
 ## 🔧 Setup Instructions
+zappa init
+zappa deploy dev
 
+python3 -m venv venv
+source venv/bin/activate
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/sterlingvin/Flask_docker-p1.git
 cd Flask_docker-p1
+
+
+## ADD Task
+POST /tasks
+Content-Type: application/json
+
+{
+  "task": "Buy groceries"
+}
